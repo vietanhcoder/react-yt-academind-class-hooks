@@ -3,22 +3,29 @@
     {
       "id":1,
       "name": "truong",
-      "colors": {
-        "hair": "white",
-        "skin":"black"
-      },
+      "height": 11,
+      "hair_color": "white",
+      "skin_color": "black",
       "gender": "male",
-      "movieCount": [1,2,3,4]
+      "films": [1,2,3,4]
     },
     {
       "id":2,
       "name": "viet anh",
-      "colors": {
-        "hair": "white",
-        "skin":"black"
-      },
+      "height": 11,
+      "hair_color": "white",
+      "skin_color": "black",
       "gender": "male",
-      "movieCount": [1,2,3,4]
+      "films": [1,2,3,4]
+    },
+    {
+      "id":3,
+      "name": "nam",
+      "height": 11,
+      "hair_color": "white",
+      "skin_color": "black",
+      "gender": "male",
+      "films": [1,2,3,4]
     }
   ]
 }

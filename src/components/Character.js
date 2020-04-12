@@ -31,7 +31,7 @@ class Character extends Component {
         this.props.selectedChar
     );
     this.setState({ isLoading: true });
-    fetch('http://localhost:4000/people' + this.props.selectedChar)
+    fetch('http://localhost:4000/people/' + this.props.selectedChar)
       .then(response => {
         if (!response.ok) {
           throw new Error('Could not fetch person!');
@@ -39,6 +39,7 @@ class Character extends Component {
         return response.json();
       })
       .then(charData => {
+        console.log(charData);
         const loadedCharacter = {
           id: this.props.selectedChar,
           name: charData.name,

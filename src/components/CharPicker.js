@@ -15,7 +15,8 @@ class CharPicker extends Component {
         return response.json();
       })
       .then(charData => {
-        const selectedCharacters = charData.results.slice(0, 5);
+        console.log(charData);
+        const selectedCharacters = charData.slice(0, 5);
         this.setState({
           characters: selectedCharacters.map((char, index) => ({
             name: char.name,
