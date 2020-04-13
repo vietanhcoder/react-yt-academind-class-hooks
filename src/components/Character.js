@@ -7,9 +7,9 @@ const Character = (props) => {
   const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = () => {
-    console.log(
-      "Sending Http request for new character with id " + props.selectedChar
-    );
+    // console.log(
+    //   "Sending Http request for new character with id " + props.selectedChar
+    // );
     setIsLoading(true);
     fetch("http://localhost:4000/people/" + props.selectedChar)
       .then((response) => {
@@ -19,7 +19,7 @@ const Character = (props) => {
         return response.json();
       })
       .then((charData) => {
-        console.log(charData);
+        // console.log(charData);
         const loadedCharacter = {
           id: props.selectedChar,
           name: charData.name,
@@ -35,7 +35,7 @@ const Character = (props) => {
         setIsLoading(false);
       })
       .catch((err) => {
-        console.log(err);
+        // console.log(err);
         setIsLoading(false);
       });
   };
